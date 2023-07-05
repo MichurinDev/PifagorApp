@@ -11,9 +11,6 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
         android:gravity="center"
         android:text="@string/title"
         android:textColor="@color/grey"
@@ -25,45 +22,35 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        android:layout_width="281dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultBtn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:srcCompat="@drawable/pifagor_im" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.500684" />
-
     <TextView
         android:id="@+id/resultTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="292dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="@string/result_textView"
         android:textColor="@color/grey"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        tools:layout_editor_absoluteY="58dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/aTextInputLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/resultTextView"
+        app:layout_constraintStart_toStartOf="@+id/resultTextView"
         app:layout_constraintTop_toBottomOf="@+id/resultTextView">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -79,7 +66,7 @@
         android:id="@+id/bTextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/aTextInputLayout"
         app:layout_constraintStart_toStartOf="@+id/aTextInputLayout"
         app:layout_constraintTop_toBottomOf="@+id/aTextInputLayout">
@@ -95,9 +82,8 @@
 
     <Button
         android:id="@+id/resultBtn"
-        android:layout_width="0dp"
+        android:layout_width="666dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:bottomLeftRadius="10dp"
         android:bottomRightRadius="10dp"
         android:text="@string/result_btn"
@@ -105,8 +91,11 @@
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
         app:backgroundTint="@color/grey"
-        app:layout_constraintEnd_toEndOf="@+id/aTextInputLayout"
-        app:layout_constraintStart_toStartOf="@+id/aTextInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/bTextInputLayout" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.952" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Пифагор</string>
+    <string name="title">Вычислить C</string>
+
+    <string name="result_textView">Результат:</string>
+    <string name="result_btn">Результат</string>
+
+    <string name="a_hint">Введите a</string>
+    <string name="b_hint">Введите b</string>
+
+    <string name="a_empty">Значение a пустое</string>
+    <string name="b_empty">Значение b пустое</string>
+</resources>
