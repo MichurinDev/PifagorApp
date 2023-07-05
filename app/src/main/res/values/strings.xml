@@ -10,4 +10,5 @@
 
     <string name="a_empty">a is empty</string>
     <string name="b_empty">b is empty</string>
+    <string name="pifagor_img_descriprion" translatable="false">Pifagor\'s Theorem Image</string>
 </resources>
